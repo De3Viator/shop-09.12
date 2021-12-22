@@ -3,7 +3,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #222222;
+    color: $black;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -21,7 +21,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #222222;
+    color: $black;
     margin-bottom: 20px;
     padding-top:64px;
 }
@@ -34,7 +34,7 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-    color: #B1B1B1 ;
+    color: $grey-text ;
 }
 
 .authorising__warning{
@@ -49,7 +49,7 @@
 .authorising__button{
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: $white-bkg;
     text-transform: uppercase;
     background-color: #F16D7F;
     border: 0;

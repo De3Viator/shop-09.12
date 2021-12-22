@@ -1,21 +1,19 @@
 .footer {
   background-color: #222224;
-}
 
-.footer__main {
+  &__main {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
   }
   
-  .footer__copyright {
+  &__copyright {
     font-size: 16px;
     line-height: 19px;
     color: #fbfbfb;
     align-self: center;
   }
-  
   
   .social-exp {
     display: inline;
@@ -25,3 +23,5 @@
     fill: pink;
   }
   
+}
+

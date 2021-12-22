@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="./scss/styles.css"/>
+    <link rel="stylesheet" href="./scss/styles.css" />
     <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,106 +50,86 @@
       </div>
     </header>
     <main>
-      <section class="registration">
-        <div class="container">
-          <p class="registration-text">registration</p>
+      <section class="shopping-cart">
+        <div class="shopping-cart__title container">
+          <p class="shopping-cart__title-text">Shopping Cart</p>
+        </div>
       </section>
-            <section class="authorising">
-              <div class="container">
-                <div class="auth-main-wrp">
-                <form>
-                  <fieldset>
-                    <div class="auth-wrp">
-                      <div><legend class="authorising__title_name">Your Name</legend></div>
-                      <div>
-                        <label>
-                          <input
-                            type="text"
-                            class="authorising__input"
-                            id="first-name"
-                            placeholder="First Name"
-                            required
-                          />
-                        </label>
-                      </div>
-                    <div>
-                      <label>
-                        <input
-                          type="text"
-                          class="authorising__input"
-                          id="last-name"
-                          placeholder="Last Name"
-                          required
-                        />
-                      </label>
-                    </div>
-                    </div>
-                  </fieldset>
-                  <fieldset>
-                    <div class="auth-wrp">
-                    <div>
-                    <legend class="authorising__title_login">Login Details</legend>
-                    </div>
-                    <label>
-                      <div>
-                      <input
-                        type="text"
-                        class="authorising__input"
-                        id="email"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                    </label>
-                    <label>
-                      <div>
-                      <input
-                        type="text"
-                        class="authorising__input"
-                        id="password"
-                        placeholder="Password"
-                        required
-                      />
-                      </div>
-                    </label>
-                     </div>
-                     <p class="authorising__warning">
-                      Please use 8 or more characters, with at least 1 number and a
-                      mixture of uppercase and lowercase letters
-                    </p>
-                    <button type="submit" class="authorising__button">
-                      <div>
-                        <span class="authorising__button-text">join now</span>
-                        <img src="img/arrow.svg" alt="arrow" />
-                      </div>
-                    </button>
-                   
-                  </fieldset>
-                  
-                </form>
-                <section class="privielege">
-                  <div>
-                  <p class="privielge__title">LOYALTY HAS ITS PERKS</p>
-                  <p class="privielge__desc">
-                    Get in on the loyalty program where you can earn points and unlock
-                    serious perks. Starting with these as soon as you join:
+      <div class="shop-cart-wrp container">
+        <div class="container">
+          <section class="stuff">
+            <div class="stuff__cart shadow">
+              <div class="stuff__cart-image">
+                <img src="img/cart-img-1.png" alt="cart" />
+              </div>
+              <div class="stuff__cart-text">
+                <div class="cart-container">
+                  <p class="cart-text-title">mango people t-&nbsp;shirt</p>
+                  <img src="img/cross.svg" alt="cross" class="cart-cross">
+                  <p class="cart-text-desc">
+                    Price: <span class="cart-pink">$300</span>
                   </p>
+                  <p class="cart-text-desc">Color: Red</p>
+                  <p class="cart-text-desc">Size: Xl</p>
+                  <p class="cart-text-desc">Quantity: <span class="cart-number">2</span></p>
+                </div>
               </div>
-              <div>
-                <ul class="privielege__list">
-                  <li class="privielege__item"><p class="privielege__item-text">15% off welcome offer</p></li>
-                  <li class="privielege__item"><p class="privielege__item-text">Free shipping, returns and exchanges on all orders</p></li>
-                  <li class="privielege__item"><p class="privielege__item-text">$10 off a purchase on your birthday</p></li>
-                  <li class="privielege__item"><p class="privielege__item-text">Early access to products</p></li>
-                  <li class="privielege__item"><p class="privielege__item-text">Exclusive offers & rewards</p></li>
-                </ul>
-              </div>
-              </section>
             </div>
+
+            <div class="stuff__cart stuff__cart_-2 shadow">
+              <div class="stuff__cart-image">
+                <img src="img/cart-img-2.png" alt="cart" />
+              </div>
+              <div class="stuff__cart-text">
+                <div class="cart-container">
+                  <p class="cart-text-title">mango people t-&nbsp;shirt</p>
+                  <img src="img/cross.svg" alt="cross" class="cart-cross">
+                  <p class="cart-text-desc">
+                    Price: <span class="cart-pink">$300</span>
+                  </p>
+                  <p class="cart-text-desc">Color: Red</p>
+                  <p class="cart-text-desc">Size: Xl</p>
+                  <p class="cart-text-desc">Quantity: <span class="cart-number">2<span></p>
+                </div>
+              </div>
+            </div>
+            <div class="stuff__button">
+              <button class="stuff__button-button login">
+                Clear Shopping Cart
+              </button>
+              <button class="stuff__button-button">Continue shopping</button>
+            </div>
+          </section>
+        </div>
+        <section class="shipping ">
+          <span class="shipping__title">Shipping Adress</span>
+          <form action="">
+              <fieldset class="input-wrp">
+                <label>
+                  <input type="text" class="shipping__input" placeholder="Country">
+                  <span class="visually-hidden">Country</span>
+                </label>
+                <label>
+                  <input type="text" class="shipping__input" placeholder="State">
+                  <span class="visually-hidden">State</span>
+                </label>
+                <label>
+                  <input type="text" class="shipping__input" placeholder="Postcode / Zip">
+                  <span class="visually-hidden">Postcode / Zip</span>
+                </label>
+              </fieldset>      
+            <button class="shipping__button" type="submit">get a quote</button>
+          </form>
+          <div class="shipping__order">
+            <div class="order-sub-total"><pre>sub total         $900</pre></div>
+            <div class="order-grand-total"><pre class="grand-text">GRAND TOTAL      <span class="total-pink">$900</span></pre></div>
+            <hr class="hr">
+            <button class="order-button">
+              <span class="order-button-text">proceed to checkout</span></button>            
           </div>
-              </section>
-                
-            
+        </section>
+      </div>
+      
       <section class="subscription">
         <div class="subscription__list container">
           <div class="subscription__quote">
@@ -172,7 +152,7 @@
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                class="subscription__input reg-border"
+                class="subscription__input"
               />
               <button type="submit" class="subscription__button">
                 Subscribe
@@ -294,5 +274,6 @@
         </div>
       </div>
     </footer>
+    </main>
   </body>
 </html>

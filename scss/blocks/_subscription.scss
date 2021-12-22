@@ -59,7 +59,7 @@
     background: #e1e1e1;
     border: 1px solid #000000;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 23px;
     font-family: Lato;
     color: #222224;
     opacity: 0.67;
@@ -75,14 +75,23 @@
   }
   
   .subscription__button {
+    font-family: Lato;
     background: #f16d7f;
     color: #ffffff;
     height: 50px;
     width: 100px;
     border: none;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
     position: absolute;
     right: 0px;
   }
-  
+
+  .subscription__button:hover,
+  .subscription__button:focus{
+    background-color: purple;
+  }
+
+  .subscription__button:active{
+    background-color: plum;
+  }
