@@ -1,5 +1,6 @@
 .subscription {
-    background-image: url(../../img/sub-back.png);
+    background-size: contain;
+    background:url(../../img/sub-back.png) rgba(244, 244, 244, 0.7);
   }
   
   .subscription__list {
@@ -94,4 +95,50 @@
 
   .subscription__button:active{
     background-color: plum;
+  }
+
+  @media (max-width:$tablet-width){
+
+    .subscription{
+      background-size: cover;
+    }
+    .subscription__list{
+      flex-direction: column;
+    }
+
+    .subscription__sub{
+      width: 412px;
+    }
+
+    .subscription__qoite{
+      margin-top: 64px;
+      margin-bottom: 48px;
+    }
+
+    .subscription__sub{
+      padding-top: 0px;
+      padding-bottom: 140px;
+    }
+
+    .subscription__quote-text,
+    .subscription__sub-text,
+    .subscription__sub-head{
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+  }
+
+  @media (max-width:$phone-width){
+    .subscription__quote{
+      padding-top: 64px;
+      margin-bottom: 60px;
+    }
+
+    .subscription__sub{
+      padding-bottom: 109px;
+    }
+
+    .subscription__input{
+      border:  0;
+    }
   }

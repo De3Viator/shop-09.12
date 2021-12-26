@@ -36,6 +36,10 @@
   display: none;
 }
 
+.header__ask{
+  margin-left: 40px;
+}
+
 .header__input{
   background-color: transparent;
   height: 50px;
@@ -52,6 +56,23 @@
 .up-container:hover .up-img{
   fill: pink;
 
+}
+
+@media (max-width:$tablet-width){
+
+  .container{
+    width: auto;
+  }
+}
+
+@media(max-width:$phone-width){
+  .header__link{
+    display: none;
+  }
+
+  .header__ask{
+    margin-left: 16px;
+  }
 }
 
   

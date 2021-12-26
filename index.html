@@ -16,12 +16,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <div class="header__wrp">
           <div class="header__nav-group">
             <img src="img/logo.svg" alt="loop" class="header_logo" />
-            <label>
-              <span class="up-container header__link">
+            <label class="header__ask">
+              <span class="up-container">
                 <svg
                   width="27"
                   height="28"
@@ -152,7 +152,13 @@
     </header>
     <main>
       <section class="brand">
-        <img src="img/Man.jpg" alt="man" width="800px" height="765px" />
+        <img
+          src="img/Man.jpg"
+          alt="man"
+          width="800px"
+          height="765px"
+          class="brand__img"
+        />
         <div class="brand__title-wrp">
           <h1 class="brand__title">
             <span class="brand__sub-title">
@@ -164,40 +170,36 @@
           </h1>
         </div>
       </section>
-      <section class="sales container">
+      <section class="sales container sales__container">
         <h2 class="sales__title visually-hidden">sales</h2>
         <ul class="sales__list">
-          <li class="sales__item_woman">
-            <div class="sales__item-text woman">
-              <p class="sales__item-title upper-text">30% off</p>
-              <h3 class="sales__item-desc upper-text">for women</h3>
+            <li class="sales__item sales__item_woman">
+              <div class="sales__item-text sales__item-text_woman">
+                <div class="sales__item-text_title">30% off</div>
+                <span class="sales__item-text_desc"> for women</span>
+              </div>
+            </li>
+            <li class="sales__item sales__item_man">
+              <div class="sales__item-text sales__item-text_man">
+                <div class="sales__item-text_title">hot deal</div>
+                <span class="sales__item-text_desc"> for men</span>
+              </div>
+            </li>
+            <li class="sales__item sales__item-kids">
+              <div class="sales__item-text sales__item-text_kid">
+                <div class="sales__item-text_title">new arrivals</div>
+                <span class="sales__item-text_desc"> for kids</span>
+              </div>
+            </li>
+          <li class="sales__item sales__item_shoes">
+            <div class="sales__item-text sales__item-text_shoes">
+              <div class="sales__item-text_title">luxirous & trendy</div>
+              <span class="sales__item-text_desc"> accesories</span>
             </div>
-            <img src="img/banner-1.png" alt="banner-1" />
-          </li>
-          <li class="sales__item_man">
-            <div class="sales__item-text">
-              <p class="sales__item-title upper-text">hot deal</p>
-              <h3 class="sales__item-desc upper-text">for men</h3>
-            </div>
-            <img src="img/banner-2.png" alt="banner-2" />
-          </li>
-          <li class="sales__item_kids">
-            <div class="sales__item-text">
-              <p class="sales__item-title upper-text">new arrivals</p>
-              <h3 class="sales__item-desc upper-text">for kids</h3>
-            </div>
-            <img src="img/banner-3.png" alt="banner-3" />
-          </li>
-          <li class="sales__item_shoes">
-            <div class="sales__item-text shoes">
-              <p class="sales__item-title upper-text">luxirous & trendy</p>
-              <h3 class="sales__item-desc upper-text">accessories</h3>
-            </div>
-            <img src="img/banner-4.png" alt="banner-4" />
           </li>
         </ul>
       </section>
-      <section class="products container">
+      <section class="products container products__container">
         <div class="products__head">
           <span class="products__head-title"><h2>Featured Items</h2></span>
           <p class="products__head-text">
@@ -222,13 +224,15 @@
                 <span class="buy-button-text">Add To Cart</span>
               </button>
             </div>
-
-            <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
-            <p class="product__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-            </p>
-            <p class="product__item-price">$52.00</p>
+            <div class="product__item-text">
+              <h3 class="product__item-title">ELLERY X M'O CAPSULE</h3>
+              <p class="product__item-desc">
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <p class="product__item-price">$52.00</p>
+            </div>
           </li>
           <li class="product__item">
             <img
@@ -255,7 +259,11 @@
             <p class="product__item-price">$52.00</p>
           </li>
           <li class="product__item">
-            <img src="img/features-3.png" alt="features-1" />
+            <img
+              src="img/features-3.png"
+              alt="features-1"
+              class="product__item-img"
+            />
             <div class="overlay"></div>
             <div class="buy-button-container">
               <button class="buy-button">
@@ -275,7 +283,11 @@
             <p class="product__item-price">$52.00</p>
           </li>
           <li class="product__item">
-            <img src="img/features-4.png" alt="features-1" />
+            <img
+              src="img/features-4.png"
+              alt="features-1"
+              class="product__item-img"
+            />
             <div class="overlay"></div>
             <div class="buy-button-container">
               <button class="buy-button">
@@ -295,7 +307,11 @@
             <p class="product__item-price">$52.00</p>
           </li>
           <li class="product__item">
-            <img src="img/features-5.png" alt="features-1" />
+            <img
+              src="img/features-5.png"
+              alt="features-1"
+              class="product__item-img"
+            />
             <div class="overlay"></div>
             <div class="buy-button-container">
               <button class="buy-button">
@@ -315,7 +331,11 @@
             <p class="product__item-price">$52.00</p>
           </li>
           <li class="product__item">
-            <img src="img/features-6.png" alt="features-1" />
+            <img
+              src="img/features-6.png"
+              alt="features-1"
+              class="product__item-img"
+            />
             <div class="overlay"></div>
             <div class="buy-button-container">
               <button class="buy-button">
@@ -392,7 +412,7 @@
         </ul>
       </section>
       <section class="subscription">
-        <div class="subscription__list container">
+        <div class="subscription__list container subscription__container">
           <div class="subscription__quote">
             <img
               src="img/Ellipse.png"
@@ -423,8 +443,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__main container">
+    <footer class="footer container">
+      <div class="footer__main container footer__container">
         <span class="footer__copyright">© 2021 Brand All Rights Reserved.</span>
         <div class="footer__link">
           <div class="social-exp">

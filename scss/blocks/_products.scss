@@ -32,11 +32,13 @@
   margin-top: 25px;
   font-size: 13px;
   line-height: 16px;
+  padding-left: 16px;
   color: $black;
 }
 
 .product__item-desc {
   margin-top: 12px;
+  padding-left: 16px;
   font-weight: 300;
   width: 315px;
   color: #5d5d5d;
@@ -44,9 +46,11 @@
 
 .product__item-price {
   margin-top: 18px;
+  padding-left: 16px;
   font-size: 16px;
   line-height: 19px;
   color: #f16d7f;
+  padding-bottom: 20px;
 }
 
 .products__button-wrp {
@@ -112,5 +116,23 @@
 
 .buy-button-container:active .buy-button{
   background-color: plum;
+}
+
+@media (max-width:$tablet-width){
+  .products__button{
+    margin-top: 32px;
+    margin-bottom: 65px;
+  }
+
+}
+
+@media (max-width:$phone-width){
+  .product__item{
+    width: 98%;
+  }
+
+  .product__item-img{
+    width: 100%;
+  }
 }
 
