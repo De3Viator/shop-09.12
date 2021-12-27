@@ -25,4 +25,15 @@
     @include flex;
 }
 
+@media(max-width:$tablet-width){
+    .shopping-cart__title{
+        width: 98%;
+    }
+
+    .shop-cart-wrp{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 

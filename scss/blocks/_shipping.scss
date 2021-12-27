@@ -44,7 +44,7 @@
 .shipping__order{
     background: #F5F3F3;
     width: 360px;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -56,13 +56,18 @@
     line-height: 13px;
     color: #4A4A4A;
     font-family: Lato;
+    text-align: right;
+}
+
+.order-grand-total{
+    text-align: right;
 }
 
 .order-button{
     text-transform: uppercase;
     padding: 15px 43px 16px 41px;
     background: #F16D7F;
-    text-align: left;
+   text-align: left;
     border: 0px;
 }
 
@@ -99,4 +104,11 @@
     margin-bottom: 17px;
     background: #E2E2E2;
     width: 275px;
+    opacity: 0.9;
+}
+
+@media(max-width:$tablet-width){
+    .shipping{
+        display: flex;
+    }
 }
