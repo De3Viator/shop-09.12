@@ -12,7 +12,6 @@
     font-size: 16px;
     line-height: 19px;
     color: #fbfbfb;
-    align-self: center;
   }
   
   .social-exp {
@@ -22,6 +21,20 @@
   .social-exp:hover .social-link {
     fill: pink;
   }
-  
+}
+
+@media (max-width:$phone-width){
+  .footer__main{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__link{
+    margin-bottom: 40px;
+  }
+
+  .footer__copyright{
+  }
 }
 

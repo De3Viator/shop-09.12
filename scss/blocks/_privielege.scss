@@ -31,3 +31,34 @@
 .privielege__item-text{
     padding-left: 23px;
 }
+
+@media(max-width:$tablet-width){
+
+    .privielege{
+        margin-left: 22px;
+    }
+
+    .privielege__item,
+    .privielge__desc,
+    .privielge__title{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    .privielge__desc{
+        width: auto;
+    }
+}
+
+@media(max-width:480px){
+    .privielege{
+        margin-left: 0px;
+        margin-bottom: 100px;
+    }
+
+    .privielge__title{
+        margin-top: 0px;
+       
+    }
+}
