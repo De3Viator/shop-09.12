@@ -7,34 +7,44 @@
     display: flex;
     justify-content: space-between;
   }
-  
+
   &__copyright {
     font-size: 16px;
     line-height: 19px;
     color: #fbfbfb;
   }
-  
+
   .social-exp {
     display: inline;
   }
-  
+
   .social-exp:hover .social-link {
     fill: pink;
   }
 }
 
-@media (max-width:$phone-width){
-  .footer__main{
+.footer__copyright {
+  align-self: center;
+}
+
+@media (max-width: 2700px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+ 
+}
+
+@media (max-width: $phone-width) {
+  .footer__main {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
 
-  .footer__link{
+  .footer__link {
     margin-bottom: 40px;
   }
-
-  .footer__copyright{
-  }
 }
-

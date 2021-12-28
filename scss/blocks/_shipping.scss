@@ -57,10 +57,12 @@
     color: #4A4A4A;
     font-family: Lato;
     text-align: right;
+    margin-right: 35px;
 }
 
 .order-grand-total{
     text-align: right;
+    margin-right: 35px;
 }
 
 .order-button{
@@ -69,6 +71,7 @@
     background: #F16D7F;
    text-align: left;
     border: 0px;
+    margin-bottom: 42px;
 }
 
 .order-button-text{
@@ -110,5 +113,55 @@
 @media(max-width:$tablet-width){
     .shipping{
         display: flex;
+        justify-content: space-between;
+        width: 96%;
+        margin-bottom: 40px;
+    }
+
+    .shipping__input{
+        margin-right: 30px;
+    }
+
+    .shipping__button{
+        margin-bottom: 0px;
+    }
+
+    .shipping__order{
+        margin-top: 36px;
+
+    }
+
+    .order-button{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:688px) {
+
+    
+    .shipping{
+        flex-direction: column;
+        align-items: center;
+
+        &__order{
+            width: 100%;
+        }
+
+        &__input{
+            margin-right: 0px;
+            width: 375px;
+        }
+
+        .order-button{
+            margin-bottom: 42px;
+        }
+
+        .order-sub-total{
+            margin-right: 60px;
+        }
+
+        .order-grand-total{
+            margin-right: 60px;
+        }
     }
 }

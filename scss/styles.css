@@ -596,6 +596,7 @@ body {
 .subscription__quote {
   text-align: center;
   width: 360px;
+  height: 214px;
   margin-bottom: 126px;
 }
 
@@ -727,6 +728,18 @@ body {
 
 .footer .social-exp:hover .social-link {
   fill: pink;
+}
+
+.footer__copyright {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 2700px) {
+  .footer {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -966,8 +979,11 @@ body {
 }
 
 @media (max-width: 1599px) {
+  .shopping-cart {
+    margin-bottom: 60px;
+  }
   .shopping-cart__title {
-    width: 98%;
+    width: 96%;
   }
   .shop-cart-wrp {
     -webkit-box-orient: vertical;
@@ -977,6 +993,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .shopping-cart__title {
+    text-align: center;
+  }
+  .shopping-cart {
+    margin-bottom: 39px;
   }
 }
 
@@ -1004,7 +1029,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 72px;
-  width: 652px;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1013,7 +1038,7 @@ body {
 
 .stuff__button-button {
   border: 1px solid #a4a4a4;
-  background: #FFFFFF;
+  background: #ffffff;
   padding-top: 16px;
   padding-left: 39px;
   padding-right: 41px;
@@ -1066,9 +1091,78 @@ body {
 }
 
 .cart-number {
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   padding: 0px 16px 0 16px;
   margin-left: 25px;
+}
+
+@media (max-width: 1599px) {
+  .stuff {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stuff__cart-text {
+    width: 472px;
+  }
+  .stuff__button {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 680px) {
+  .cart-container {
+    margin-top: 17px;
+    margin-left: 13px;
+  }
+  .stuff__button {
+    margin-top: 62px;
+    margin-bottom: 72px;
+  }
+  .cart-text-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    width: 143px;
+    margin-bottom: 0px;
+  }
+  .stuff__cart-text {
+    width: 92%;
+    height: 195px;
+    margin-right: 8px;
+  }
+  .cart-text-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .cart-image {
+    width: 100%;
+    height: 100%;
+    margin-left: 8px;
+  }
+  .stuff__button {
+    margin-top: 30px;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stuff__button-button {
+    text-transform: none;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
 }
 
 .shipping__title {
@@ -1152,10 +1246,12 @@ body {
   color: #4A4A4A;
   font-family: Lato;
   text-align: right;
+  margin-right: 35px;
 }
 
 .order-grand-total {
   text-align: right;
+  margin-right: 35px;
 }
 
 .order-button {
@@ -1164,6 +1260,7 @@ body {
   background: #F16D7F;
   text-align: left;
   border: 0px;
+  margin-bottom: 42px;
 }
 
 .order-button-text {
@@ -1207,6 +1304,51 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 96%;
+    margin-bottom: 40px;
+  }
+  .shipping__input {
+    margin-right: 30px;
+  }
+  .shipping__button {
+    margin-bottom: 0px;
+  }
+  .shipping__order {
+    margin-top: 36px;
+  }
+  .order-button {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 688px) {
+  .shipping {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shipping__order {
+    width: 100%;
+  }
+  .shipping__input {
+    margin-right: 0px;
+    width: 375px;
+  }
+  .shipping .order-button {
+    margin-bottom: 42px;
+  }
+  .shipping .order-sub-total {
+    margin-right: 60px;
+  }
+  .shipping .order-grand-total {
+    margin-right: 60px;
   }
 }
 
@@ -1233,6 +1375,9 @@ body {
   }
   .cart__container {
     width: 1140px;
+  }
+  .shopping__container {
+    width: 100%;
   }
 }
 
