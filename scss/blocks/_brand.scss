@@ -16,6 +16,14 @@
     text-transform: uppercase;  
   }
 
+  &__title-wrp::before{
+    content: '';
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    margin-right: 15px;
+  }
+
   &__sub-title {
     display: block;
     font-size: 32px;
@@ -96,5 +104,13 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+  }
+
+  .brand__title-wrp::before{
+    content: '';
+    width: 12px;
+    height: 61px;
+    background-color: #F16D7F;
+    margin-right: 15px;
   }
 }

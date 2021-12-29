@@ -7,6 +7,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.authorising__state{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 .auth_wrp {
   display: flex;
   justify-content: column;
@@ -37,6 +43,18 @@
   color: $grey-text;
 }
 
+.authorising__input::placeholder{
+  color: #B1B1B1;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 15px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+
+}
+
 .authorising__warning {
   font-family: Lato;
   font-weight: 300;
@@ -61,6 +79,10 @@
   margin-bottom: 96px;
 }
 
+.authorising__button:hover{
+  background-color: palevioletred;
+}
+
 .authorising__button-text {
   margin-right: 20px;
 }
@@ -72,8 +94,5 @@
 
   .authorising__input {
     width: 98%;
-  }
-
-  .authorising__button {
   }
 }

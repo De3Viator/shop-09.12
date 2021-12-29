@@ -1,0 +1,46 @@
+.arrivals{
+    background-color: #F8F3F4;
+    width: 100%;
+}
+
+.arrivals__text{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.arrivals__text_main{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #F16D7F;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.arrivals__text_second{
+    font-family: Lato;        
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-bottom: 66px;
+    padding-top: 65px;
+}
+
+.arrivals__text_second-new{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color:#F16D7F;
+}
+
+.icon-slide{
+    font-size: 31px;
+    background-color: #D8D8D8;
+    color: black;
+}
+
