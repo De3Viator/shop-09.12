@@ -1553,6 +1553,12 @@ body {
   color: #F16D7F;
 }
 
+@media (max-width: 1599px) {
+  .carousel {
+    z-index: 2;
+  }
+}
+
 .board {
   border: 1px solid #eaeaea;
   padding-bottom: 65px;

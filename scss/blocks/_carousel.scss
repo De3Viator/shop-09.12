@@ -22,3 +22,9 @@
     color: #F16D7F;
 }
 
+@media(max-width:$tablet-width){
+    .carousel{
+        z-index: 2;
+    }
+}
+
