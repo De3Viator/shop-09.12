@@ -1,0 +1,135 @@
+.board {
+  border: 1px solid #eaeaea;
+  padding-bottom: 65px;
+  &__collection {
+    margin-top: 64px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f16d7f;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5e5e5e;
+    margin-bottom: 32px;
+    max-width: 558px;
+  }
+
+  &__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ef5b70;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  &__action {
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    margin-bottom: 65px;
+  }
+
+  &__button-text {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f26376;
+    padding-left: 22px;
+  }
+
+  &__button {
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 9px;
+    margin-left: 22px;
+  }
+
+  &__hr{
+    margin-left: 263px;
+    margin-right: 263px;
+  }
+}
+
+.board__button:hover{
+  opacity: 0.5;
+}
+
+.board__collection::before{
+  content: '';
+  height: 3px;
+  width: 63px;
+  background-color: #EF5B70;
+  position: absolute;
+  top: 160%;
+  left: 47%;
+}
+
+
+.pink {
+  border: 1px solid #ff6a6a;
+}
+
+.button-text {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  text-transform: uppercase;
+}
+
+.chevron-color {
+  color: #6f6e6e;
+  padding-left: 9px;
+}
+
+@media (max-width: 1599px) {
+  .board {
+    min-width: 100%;
+  }
+
+  .board__collection::before{
+    left: 45%;
+  }
+
+  .board__hr{
+    margin-left: 63px;
+    margin-right: 63px;
+  }
+}
+
+@media (max-width: $phone-width) {
+  .button-text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .board__collection::before{
+    left: 42%;
+  }
+
+  .board__hr{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

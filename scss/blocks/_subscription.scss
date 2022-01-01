@@ -126,21 +126,37 @@
     .subscription__sub-head{
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     }
+    .subscription__sub-head{
+      margin-bottom: 0px;
+    }
+
+    .subscription__quote-text-para{
+      margin-bottom: 0px;
+    }
 
   }
 
   @media (max-width:$phone-width){
+
+    
 
     .subscription__quote{
       padding-top: 64px;
       margin-bottom: 60px;
     }
 
+  
+
     .subscription__sub{
       padding-bottom: 109px;
+      padding-top: 32px;
     }
 
     .subscription__input{
       border:  0;
+    }
+
+    .subscription__form{
+      margin-top: 20px;
     }
   }
