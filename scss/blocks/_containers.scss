@@ -1,0 +1,47 @@
+@media (max-width:$tablet-width){
+    .header__container{
+        width: 92%;
+    }
+
+    .sales__container{
+        width:96%;
+    }
+
+    .products__container{
+        width: 100%;
+    }
+
+    .subscription__container{
+        align-items: center;
+    }
+
+    .footer__container{
+        width: 92%;
+    }
+
+    .register__container{
+        width: 96%;
+    }
+
+    .cart__container{
+        width: 1140px;
+    }
+
+    .shopping__container{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:450px) {
+    .header__container{
+        width: 95%;
+    }
+
+    .sales__container{
+        width: 95%;
+    }
+
+    
+}

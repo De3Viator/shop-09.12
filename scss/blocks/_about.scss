@@ -1,5 +1,5 @@
 .about {
-    background-color: #222224;
+    background-color: $black-bkg;
   }
   
   .about__list {
@@ -39,4 +39,35 @@
   .about__list-text {
     color: #fbfbfb;
     text-align: center;
+  }
+
+  @media (max-width:$tablet-width){
+    .about__list{
+      flex-direction: column;
+    }
+
+    .about__list-text{
+      color: #FBFBFB;
+      width: 360px;
+    }
+
+    .about__list-item{
+      margin-bottom: 48px;
+    }
+
+    .about{
+      height: 768px;
+    }
+  }
+
+  @media (max-width:$phone-width){
+    .about{
+      height: auto;
+
+      &__list{
+        padding-top: 48px;
+        padding-bottom: 80px;
+      }
+    }
+
   }
