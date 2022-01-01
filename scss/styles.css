@@ -1539,6 +1539,7 @@ body {
 
 .carousel {
   background-color: #F7F7F7;
+  z-index: -1;
 }
 
 .carousel__font {
@@ -1555,6 +1556,9 @@ body {
 .board {
   border: 1px solid #eaeaea;
   padding-bottom: 65px;
+  background-color: #fff;
+  margin-top: -50px;
+  z-index: 2;
 }
 
 .board__collection {
@@ -1660,6 +1664,7 @@ body {
 @media (max-width: 1599px) {
   .board {
     min-width: 100%;
+    margin-top: 0px;
   }
   .board__collection::before {
     left: 45%;

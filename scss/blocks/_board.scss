@@ -1,6 +1,9 @@
 .board {
   border: 1px solid #eaeaea;
   padding-bottom: 65px;
+  background-color: #fff;
+  margin-top: -50px;
+  z-index: 2;  
   &__collection {
     margin-top: 64px;
     margin-bottom: 25px;
@@ -106,6 +109,7 @@
 @media (max-width: 1599px) {
   .board {
     min-width: 100%;
+    margin-top: 0px;
   }
 
   .board__collection::before{
@@ -117,6 +121,7 @@
     margin-right: 63px;
   }
 }
+
 
 @media (max-width: $phone-width) {
   .button-text {
