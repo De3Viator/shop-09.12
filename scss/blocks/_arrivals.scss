@@ -1,0 +1,50 @@
+.arrivals{
+    background-color: #F8F3F4;
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    &__title{
+        font-family: 'Lato';
+        text-transform: uppercase; 
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+    
+    &__position{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    &__position-pink{
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: #F16D7F;
+    }
+}
+
+@media(max-width:$phone-width){
+    .arrivals__text{
+        display: block;
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+
+    .arrivals__position{
+        padding-top: 32px;
+    }
+}
+

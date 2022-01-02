@@ -1,65 +1,79 @@
 
-  .buy-button-text {
-    margin-top: 8px;
-    margin-left: 13px;
+.upper-text {
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: $black;
+}
+
+.header__logo {
+  margin: 0 41px 0 0;
+}
+
+.header__button {
+  background-color: transparent;
+  border: 0;
+}
+
+.icon {
+  fill: none;
+}
+
+.header__link {
+  margin: 0 0 0 33px;
+}
+
+.header__wrp {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center;
+}
+
+
+.header__menu {
+  display: none;
+}
+
+.header__ask{
+  margin-left: 40px;
+}
+
+.header__input{
+  background-color: transparent;
+  height: 50px;
+  border: none;
+  color: $white-bkg;
+}
+
+.loop__input{
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.up-container:hover .up-img{
+  fill: pink;
+
+}
+
+@media (max-width:$tablet-width){
+
+  .container{
+    width: auto;
   }
-  
-  .product__item:hover .buy-button {
-    background: transparent;
-    color: #ffffff;
-    display: block;
-    border: 1px solid #ffffff;
-    padding: 10px;
-    top: 188px;
-    left: 110px;
-    width: 138px;
-    position: absolute;
-    display: flex;
-  }
-  
-  .product__item:hover .overlay {
-    background-color: rgba(58, 56, 56, 0.86);
-    top: 0px;
-    height: 75%;
-    width: 100%;
-    position: absolute;
-    display: block;
-  }
-  
-  .upper-text {
-    text-transform: uppercase;
-  }
-  
-  .header {
-    background-color: $black;
-  }
-  
-  .header__logo {
-    margin: 0 41px 0 0;
-  }
-  
-  .header__button {
-    background-color: transparent;
-    border: 0;
-  }
-  
-  .icon {
-    fill: none;
-  }
-  
-  .header__link {
-    margin: 0 0 0 33px;
-  }
-  
-  .header__wrp {
-    display: flex;
-    justify-content: space-between;
-    min-height: 75px;
-    align-items: center;
-  }
-  
-  .header__menu {
+}
+
+@media(max-width:500px){
+  .header__link{
     display: none;
   }
+
+  .header__ask{
+    margin-left: 16px;
+  }
+}
+
   
   

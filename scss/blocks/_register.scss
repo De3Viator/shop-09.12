@@ -22,3 +22,12 @@
     padding-bottom: 60px;
 }
 
+
+
+
+@media(max-width:$phone-width){
+    .registration{
+        text-align: center;
+    }
+}
+
