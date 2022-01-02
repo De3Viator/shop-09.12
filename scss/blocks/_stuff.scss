@@ -77,6 +77,15 @@
   margin-left: 25px;
 }
 
+.stuff__button-button{
+  transition-duration:0.7s;
+}
+
+.stuff__button-button:hover{
+  background-color: #000;
+  color: #fff;
+}
+
 @media (max-width: $tablet-width) {
   .stuff {
     display: flex;
@@ -152,6 +161,5 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-
   }
 }

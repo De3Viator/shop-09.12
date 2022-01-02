@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Lato";
   font-weight: 400;
@@ -42,10 +43,6 @@ body {
   border: 0;
 }
 
-.icon {
-  fill: none;
-}
-
 .header__link {
   margin: 0 0 0 33px;
 }
@@ -85,6 +82,8 @@ body {
 }
 
 .up-container:hover .up-img {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
   fill: pink;
 }
 
@@ -108,6 +107,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 63px;
+  position: relative;
 }
 
 .brand__title-wrp {
@@ -145,6 +145,24 @@ body {
 
 .brand__sub-title-pink {
   color: var(#f1808f);
+}
+
+.brand__overlay {
+  display: none;
+}
+
+.brand:hover .brand__overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(97, 91, 92, 0.2)), to(rgba(97, 91, 92, 0.2))), rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, rgba(97, 91, 92, 0.2), rgba(97, 91, 92, 0.2)), rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.brand:hover .sidebar {
+  display: block;
 }
 
 .main-title {
@@ -216,6 +234,72 @@ body {
     background-color: #F16D7F;
     margin-right: 15px;
   }
+}
+
+/*animation
+@keyftame move{
+  0%{
+  }
+  25%{
+
+  }
+  50%{
+
+  }
+  
+  100%{
+  }
+  animation-name;
+  animation-timing-function:linear;
+  animation-play-state;
+  animation-fill-mode;
+  animation-delay; 
+  animation-iteration-count;
+  animation-duration;
+  transition - переход одного свойства в другое (пишутся нужніе свойства)
+
+  transform: перемещение относительно себя
+  */
+.sidebar {
+  position: absolute;
+  display: none;
+  height: 95%;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding-top: 37px;
+  padding-left: 34px;
+}
+
+.sidebar__main-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sidebar__title {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding-top: 22px;
+}
+
+.sidebar__list {
+  padding-left: 20px;
+}
+
+.sidebar__item {
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.sidebar__main-item {
+  padding-right: 100px;
 }
 
 .sales__list {
@@ -420,6 +504,8 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #f26376;
+  -webkit-transition-duration: 0.9s;
+          transition-duration: 0.9s;
 }
 
 .products__button:hover {
@@ -434,6 +520,8 @@ body {
 .overlay,
 .buy-button {
   display: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .buy-button-text {
@@ -459,7 +547,7 @@ body {
 .product__item:hover .overlay {
   background-color: rgba(58, 56, 56, 0.86);
   top: 0px;
-  height: 75%;
+  height: 72%;
   width: 100%;
   position: absolute;
   display: block;
@@ -664,6 +752,8 @@ body {
   border-bottom-right-radius: 23px;
   position: absolute;
   right: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscription__button:hover,
@@ -752,6 +842,8 @@ body {
 }
 
 .footer .social-exp:hover .social-link {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
   fill: pink;
 }
 
@@ -870,6 +962,8 @@ body {
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .authorising__input::-webkit-input-placeholder {
@@ -938,6 +1032,8 @@ body {
   padding-left: 26px;
   margin-top: 39px;
   margin-bottom: 96px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .authorising__button:hover {
@@ -980,6 +1076,8 @@ body {
 
 .radio-input:checked + .radio-label::before {
   border: 6px solid pink;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 480px) {
@@ -1209,6 +1307,16 @@ body {
   margin-left: 25px;
 }
 
+.stuff__button-button {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.stuff__button-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 @media (max-width: 1599px) {
   .stuff {
     display: -webkit-box;
@@ -1319,6 +1427,13 @@ body {
   background-color: #FFFFFF;
   padding: 10px 14px 12px 15px;
   border: 1px solid #A4A4A4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shipping__button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .shipping-input::-webkit-input-placeholder {
@@ -1382,6 +1497,12 @@ body {
   text-align: left;
   border: 0px;
   margin-bottom: 42px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.order-button:hover {
+  background: cadetblue;
 }
 
 .order-button-text {
@@ -1614,6 +1735,8 @@ body {
 
 .board__button {
   margin-bottom: 65px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .board__button-text {

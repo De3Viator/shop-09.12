@@ -1,0 +1,41 @@
+.sidebar{
+    position: absolute;
+    display: none;
+    height: 95%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding-top: 37px;
+    padding-left: 34px;
+
+    &__main-title{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    &__title{
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-transform: uppercase;
+        padding-top: 22px;
+    }
+
+    &__list{
+        padding-left: 20px;
+    }
+
+    &__item{
+        padding-top: 12px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+
+    &__main-item{
+        padding-right: 100px;
+    }
+}

@@ -16,10 +16,6 @@
   border: 0;
 }
 
-.icon {
-  fill: none;
-}
-
 .header__link {
   margin: 0 0 0 33px;
 }
@@ -54,8 +50,8 @@
 }
 
 .up-container:hover .up-img{
+  transition: 0.9s;
   fill: pink;
-
 }
 
 @media (max-width:$tablet-width){

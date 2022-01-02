@@ -50,7 +50,7 @@
                 <path
                   d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
                   fill="#E8E8E8"
-                  class="up-img"
+                  class="up-img over-act"
                 />
               </svg>
             </button>
@@ -152,6 +152,7 @@
     </header>
     <main>
       <section class="brand">
+        <div class="brand__overlay"></div>
         <img
           src="img/Man.jpg"
           alt="man"
@@ -169,28 +170,63 @@
             </span>
           </h1>
         </div>
+        <nav class="sidebar">
+          <h1 class="sidebar__main-title">Menu</h1>
+          <ul>
+            <li class="sidebar__main-item">
+              <h1 class="sidebar__title">Man</h1>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">Accessories</li>
+                <li class="sidebar__item">Bags</li>
+                <li class="sidebar__item">Denim</li>
+                <li class="sidebar__item">T-Shirts</li>
+              </ul>
+            </li>
+            <li class="sidebar__main-item">
+              <h1 class="sidebar__title">Woman</h1>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">Accessories</li>
+                <li class="sidebar__item">Jackets & Coats</li>
+                <li class="sidebar__item">Polos</li>
+                <li class="sidebar__item">T-Shirts</li>
+                <li class="sidebar__item">Shirts</li>
+              </ul>
+            </li>
+            <li class="sidebar__main-item">
+              <h1 class="sidebar__title">Kids</h1>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">Accessories</li>
+                <li class="sidebar__item">Jackets & Coats</li>
+                <li class="sidebar__item">Polos</li>
+                <li class="sidebar__item">T-Shirts</li>
+                <li class="sidebar__item">Shirts</li>
+                <li class="sidebar__item">Bags</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </section>
       <section class="sales container sales__container">
         <h2 class="sales__title visually-hidden">sales</h2>
         <ul class="sales__list">
-            <li class="sales__item sales__item_woman">
-              <div class="sales__item-text sales__item-text_woman">
-                <div class="sales__item-text_title">30% off</div>
-                <span class="sales__item-text_desc"> for women</span>
-              </div>
-            </li>
-            <li class="sales__item sales__item_man">
-              <div class="sales__item-text sales__item-text_man">
-                <div class="sales__item-text_title">hot deal</div>
-                <span class="sales__item-text_desc"> for men</span>
-              </div>
-            </li>
-            <li class="sales__item sales__item-kids">
-              <div class="sales__item-text sales__item-text_kid">
-                <div class="sales__item-text_title">new arrivals</div>
-                <span class="sales__item-text_desc"> for kids</span>
-              </div>
-            </li>
+          <li class="sales__item sales__item_woman">
+            <div class="sales__item-text sales__item-text_woman">
+              <div class="sales__item-text_title">30% off</div>
+              <span class="sales__item-text_desc"> for women</span>
+            </div>
+          </li>
+          <li class="sales__item sales__item_man">
+            <div class="sales__item-text sales__item-text_man">
+              <div class="sales__item-text_title">hot deal</div>
+              <span class="sales__item-text_desc"> for men</span>
+            </div>
+          </li>
+          <li class="sales__item sales__item-kids">
+            <div class="sales__item-text sales__item-text_kid">
+              <div class="sales__item-text_title">new arrivals</div>
+              <span class="sales__item-text_desc"> for kids</span>
+            </div>
+          </li>
           <li class="sales__item sales__item_shoes">
             <div class="sales__item-text sales__item-text_shoes">
               <div class="sales__item-text_title">luxirous & trendy</div>

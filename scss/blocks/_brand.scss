@@ -1,6 +1,7 @@
 .brand {
   display: flex;
   margin: 0 0 63px;
+  position: relative;
 
   &__title-wrp {
     display: flex;
@@ -33,6 +34,23 @@
   &__sub-title-pink {
     color: var($pink-text);
   }
+}
+
+.brand__overlay{
+  display: none;
+}
+
+.brand:hover .brand__overlay{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(97, 91, 92, 0.2), rgba(97, 91, 92, 0.2)), rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.brand:hover .sidebar{
+  display: block;
 }
 
 .main-title {
@@ -114,3 +132,28 @@
     margin-right: 15px;
   }
 }
+
+/*animation
+@keyftame move{
+  0%{
+  }
+  25%{
+
+  }
+  50%{
+
+  }
+  
+  100%{
+  }
+  animation-name;
+  animation-timing-function:linear;
+  animation-play-state;
+  animation-fill-mode;
+  animation-delay; 
+  animation-iteration-count;
+  animation-duration;
+  transition - переход одного свойства в другое (пишутся нужніе свойства)
+
+  transform: перемещение относительно себя
+  */
