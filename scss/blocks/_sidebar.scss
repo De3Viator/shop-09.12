@@ -7,6 +7,11 @@
     background-color: #fff;
     padding-top: 37px;
     padding-left: 34px;
+    transform: translateY(-200%);
+    animation-name: move;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 
     &__main-title{
         font-size: 14px;
@@ -37,5 +42,94 @@
 
     &__main-item{
         padding-right: 100px;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
     }
 }
+
+.sidebar:hover .sidebar__main-item{
+    padding-right: 150px;
+}
+
+@keyframes move{
+    25%{
+        transform: translateY(-60%);
+    }
+
+    50%{
+        transform: translateY(-40%);
+    }
+
+    75%{
+        transform: translateY(-20%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+@media(max-width:$tablet-width){
+    .sidebar{
+        padding-top: 5px;
+        height: 98%;
+
+        &__title{
+            padding-top: 5px;
+        }
+
+        &__item{
+            padding-top: 1px;
+        }
+    }
+
+}
+
+@media(min-width:$phone-width) and (max-width:710px){
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .sidebar__main-item{
+        padding-right: 0;
+    }
+    .sidebar__main-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:$phone-width){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+/*animation
+@keyftame move{
+  0%{
+  }
+  25%{
+
+  }
+  50%{
+
+  }
+  
+  100%{
+  }
+  animation-name;
+  animation-timing-function:linear;
+  animation-play-state;
+  animation-fill-mode;
+  animation-delay; 
+  animation-iteration-count;
+  animation-duration;
+  transition - переход одного свойства в другое (пишутся нужніе свойства)
+
+  transform: перемещение относительно себя
+  */

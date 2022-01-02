@@ -54,6 +54,15 @@
   fill: pink;
 }
 
+.up-container:hover+.brand__overlay{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(97, 91, 92, 0.2), rgba(97, 91, 92, 0.2)), rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+
 @media (max-width:$tablet-width){
 
   .container{

@@ -87,6 +87,16 @@ body {
   fill: pink;
 }
 
+.up-container:hover + .brand__overlay {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(97, 91, 92, 0.2)), to(rgba(97, 91, 92, 0.2))), rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, rgba(97, 91, 92, 0.2), rgba(97, 91, 92, 0.2)), rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+
 @media (max-width: 1599px) {
   .container {
     width: auto;
@@ -236,30 +246,6 @@ body {
   }
 }
 
-/*animation
-@keyftame move{
-  0%{
-  }
-  25%{
-
-  }
-  50%{
-
-  }
-  
-  100%{
-  }
-  animation-name;
-  animation-timing-function:linear;
-  animation-play-state;
-  animation-fill-mode;
-  animation-delay; 
-  animation-iteration-count;
-  animation-duration;
-  transition - переход одного свойства в другое (пишутся нужніе свойства)
-
-  transform: перемещение относительно себя
-  */
 .sidebar {
   position: absolute;
   display: none;
@@ -269,6 +255,16 @@ body {
   background-color: #fff;
   padding-top: 37px;
   padding-left: 34px;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .sidebar__main-title {
@@ -300,8 +296,117 @@ body {
 
 .sidebar__main-item {
   padding-right: 100px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
+.sidebar:hover .sidebar__main-item {
+  padding-right: 150px;
+}
+
+@-webkit-keyframes move {
+  25% {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+  50% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  75% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes move {
+  25% {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+  50% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+  75% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@media (max-width: 1599px) {
+  .sidebar {
+    padding-top: 5px;
+    height: 98%;
+  }
+  .sidebar__title {
+    padding-top: 5px;
+  }
+  .sidebar__item {
+    padding-top: 1px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 710px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar__main-item {
+    padding-right: 0;
+  }
+  .sidebar__main-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/*animation
+@keyftame move{
+  0%{
+  }
+  25%{
+
+  }
+  50%{
+
+  }
+  
+  100%{
+  }
+  animation-name;
+  animation-timing-function:linear;
+  animation-play-state;
+  animation-fill-mode;
+  animation-delay; 
+  animation-iteration-count;
+  animation-duration;
+  transition - переход одного свойства в другое (пишутся нужніе свойства)
+
+  transform: перемещение относительно себя
+  */
 .sales__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,6 +682,12 @@ body {
   }
 }
 
+@media (min-width: 320px) {
+  .product__item-desc {
+    width: auto;
+  }
+}
+
 .about {
   background-color: #222224;
 }
@@ -813,6 +924,12 @@ body {
   }
   .subscription__form {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .subscription__input {
+    width: 85%;
   }
 }
 

@@ -161,3 +161,9 @@
       margin-top: 20px;
     }
   }
+
+  @media(min-width:320px){
+    .subscription__input {
+      width: 85%;
+    }
+  }
