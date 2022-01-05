@@ -1,4 +1,28 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/googlefonts/lato-bold.woff) format("woff");
+  src: url(../fonts/googlefonts/lato-bold.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/googlefonts/lato-regular.woff) format("woff");
+  src: url(../fonts/googlefonts/lato-regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/googlefonts/lato-light.woff) format("woff");
+  src: url(../fonts/googlefonts/lato-light.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
 body {
   font-family: "Lato";
   font-weight: 400;
@@ -424,19 +448,19 @@ body {
 }
 
 .sales__item_woman {
-  background-image: url("../../img/banner-1.png");
+  background-image: url("/img/banner-1.png");
 }
 
 .sales__item_man {
-  background-image: url("../../img/banner-2.png");
+  background-image: url("/img/banner-2.png");
 }
 
 .sales__item-kids {
-  background-image: url("../../img/banner-3.png");
+  background-image: url("/img/banner-3.png");
 }
 
 .sales__item_shoes {
-  background-image: url("../../img/banner-4.png");
+  background-image: url("/img/banner-4.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
