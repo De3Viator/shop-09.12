@@ -1,4 +1,26 @@
+@font-face{
+  font-family: 'Lato';
+  src: url(../fonts/googlefonts/lato-bold.woff) format('woff');
+  src: url(../fonts/googlefonts/lato-bold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
 
+@font-face{
+  font-family: 'Lato';
+  src: url(../fonts/googlefonts/lato-regular.woff) format('woff');
+  src: url(../fonts/googlefonts/lato-regular.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Lato';
+  src: url(../fonts/googlefonts/lato-light.woff) format('woff');
+  src: url(../fonts/googlefonts/lato-light.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
 
 
 body {

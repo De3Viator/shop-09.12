@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./scss/styles.css" />
-    <title>Web-I</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <title>Main</title>
   </head>
   <body>
     <header class="header">
@@ -50,7 +44,7 @@
                 <path
                   d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
                   fill="#E8E8E8"
-                  class="up-img"
+                  class="up-img over-act"
                 />
               </svg>
             </button>
@@ -83,80 +77,14 @@
             ></a>
           </div>
         </div>
-        <nav class="header__menu">
-          <h2 class="header__menu-title">menu</h2>
-          <ul class="header__menu-list">
-            <li class="header__menu-sub-item">
-              <h3 class="menu-sub-item-title">man</h3>
-              <ul class="menu-sub-item-list">
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Accessories</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Bags</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Denim</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">T-Shirt</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>woman</h3>
-              <ul>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Accessories</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Jackets & Coats</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Polos</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">T-Shirts</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Shirts</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>kids</h3>
-              <ul>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Accessories</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Jackets & Coats</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Polos</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">T-Shirts</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Shirts</a>
-                </li>
-                <li class="menu-sub-item-list__item-link">
-                  <a href="#">Bags</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
       <section class="brand">
+        <div class="brand__overlay"></div>
         <img
           src="img/Man.jpg"
           alt="man"
-          width="800px"
-          height="765px"
           class="brand__img"
         />
         <div class="brand__title-wrp">
@@ -169,28 +97,63 @@
             </span>
           </h1>
         </div>
+        <nav class="sidebar">
+          <h1 class="sidebar__main-title">Menu</h1>
+          <ul class="sidebar__main-list">
+            <li class="sidebar__main-item">
+              <h1 class="sidebar__title">Man</h1>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">Accessories</li>
+                <li class="sidebar__item">Bags</li>
+                <li class="sidebar__item">Denim</li>
+                <li class="sidebar__item">T-Shirts</li>
+              </ul>
+            </li>
+            <li class="sidebar__main-item">
+              <h1 class="sidebar__title">Woman</h1>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">Accessories</li>
+                <li class="sidebar__item">Jackets & Coats</li>
+                <li class="sidebar__item">Polos</li>
+                <li class="sidebar__item">T-Shirts</li>
+                <li class="sidebar__item">Shirts</li>
+              </ul>
+            </li>
+            <li class="sidebar__main-item">
+              <h1 class="sidebar__title">Kids</h1>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">Accessories</li>
+                <li class="sidebar__item">Jackets & Coats</li>
+                <li class="sidebar__item">Polos</li>
+                <li class="sidebar__item">T-Shirts</li>
+                <li class="sidebar__item">Shirts</li>
+                <li class="sidebar__item">Bags</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </section>
       <section class="sales container sales__container">
         <h2 class="sales__title visually-hidden">sales</h2>
         <ul class="sales__list">
-            <li class="sales__item sales__item_woman">
-              <div class="sales__item-text sales__item-text_woman">
-                <div class="sales__item-text_title">30% off</div>
-                <span class="sales__item-text_desc"> for women</span>
-              </div>
-            </li>
-            <li class="sales__item sales__item_man">
-              <div class="sales__item-text sales__item-text_man">
-                <div class="sales__item-text_title">hot deal</div>
-                <span class="sales__item-text_desc"> for men</span>
-              </div>
-            </li>
-            <li class="sales__item sales__item-kids">
-              <div class="sales__item-text sales__item-text_kid">
-                <div class="sales__item-text_title">new arrivals</div>
-                <span class="sales__item-text_desc"> for kids</span>
-              </div>
-            </li>
+          <li class="sales__item sales__item_woman">
+            <div class="sales__item-text sales__item-text_woman">
+              <div class="sales__item-text_title">30% off</div>
+              <span class="sales__item-text_desc"> for women</span>
+            </div>
+          </li>
+          <li class="sales__item sales__item_man">
+            <div class="sales__item-text sales__item-text_man">
+              <div class="sales__item-text_title">hot deal</div>
+              <span class="sales__item-text_desc"> for men</span>
+            </div>
+          </li>
+          <li class="sales__item sales__item-kids">
+            <div class="sales__item-text sales__item-text_kid">
+              <div class="sales__item-text_title">new arrivals</div>
+              <span class="sales__item-text_desc"> for kids</span>
+            </div>
+          </li>
           <li class="sales__item sales__item_shoes">
             <div class="sales__item-text sales__item-text_shoes">
               <div class="sales__item-text_title">luxirous & trendy</div>
@@ -201,7 +164,7 @@
       </section>
       <section class="products container products__container">
         <div class="products__head">
-          <span class="products__head-title"><h2>Featured Items</h2></span>
+          <h2><span class="products__head-title">Featured Items</span></h2>
           <p class="products__head-text">
             Shop for items based on what we featured in this week
           </p>

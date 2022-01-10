@@ -1,0 +1,135 @@
+.sidebar{
+    position: absolute;
+    display: none;
+    height: 95%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding-top: 37px;
+    padding-left: 34px;
+    transform: translateY(-200%);
+    animation-name: move;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+    &__main-title{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    &__title{
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-transform: uppercase;
+        padding-top: 22px;
+    }
+
+    &__list{
+        padding-left: 20px;
+    }
+
+    &__item{
+        padding-top: 12px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+
+    &__main-item{
+        padding-right: 100px;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
+}
+
+.sidebar:hover .sidebar__main-item{
+    padding-right: 150px;
+}
+
+@keyframes move{
+    25%{
+        transform: translateY(-60%);
+    }
+
+    50%{
+        transform: translateY(-50%);
+    }
+
+    75%{
+        transform: translateY(-30%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+@media(max-width:$tablet-width){
+    .sidebar{
+        padding-top: 5px;
+        height: 98%;
+
+        &__title{
+            padding-top: 5px;
+        }
+
+        &__item{
+            padding-top: 1px;
+        }
+    }
+
+}
+
+@media(min-width:$phone-width) and (max-width:710px){
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .sidebar__main-item{
+        padding-right: 0;
+    }
+    .sidebar__main-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:$phone-width){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+/*animation
+@keyftame move{
+  0%{
+  }
+  25%{
+
+  }
+  50%{
+
+  }
+  
+  100%{
+  }
+  animation-name;
+  animation-timing-function:linear;
+  animation-play-state;
+  animation-fill-mode;
+  animation-delay; 
+  animation-iteration-count;
+  animation-duration;
+  transition - переход одного свойства в другое (пишутся нужніе свойства)
+
+  transform: перемещение относительно себя
+  */
