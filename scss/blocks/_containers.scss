@@ -1,3 +1,9 @@
+
+.catalog__container{
+  width: 1140px;
+  margin:  0 auto;
+}
+
 @media (max-width: $tablet-width) {
   .header__container {
     width: 92%;
@@ -37,6 +43,11 @@
 
   .showcase__container{
     min-width: 100%;
+  }
+
+  .catalog__container{
+    width: 96%;
+    margin: 0 auto;
   }
 }
 
