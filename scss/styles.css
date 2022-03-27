@@ -2073,6 +2073,15 @@ body {
   }
 }
 
+.cart-btn {
+  background-color: transparent;
+  border: 0;
+}
+
+.invisible {
+  display: none;
+}
+
 @media (max-width: 1599px) {
   .header__container {
     width: 92%;
