@@ -66,7 +66,7 @@
     color: #222224;
     opacity: 0.67;
     height: 50px;
-    width: 100%;
+    width: 80%;
     border-right: none;
   }
   
@@ -165,5 +165,15 @@
   @media(min-width:320px){
     .subscription__input {
       width: 85%;
+    }
+  }
+
+  @media(max-width:407px) {
+    .subscription__sub {
+      width: 100%;
+    }
+
+    .subscription__quote {
+      width: 100%;
     }
   }
