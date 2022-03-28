@@ -4,7 +4,7 @@ const app = express();
 const cart = require('./cartRouter');//обработчик всех запросов корзины
 
 app.use(express.json());
-app.use('/', express.static('Vue'));
+app.use('/', express.static('public'));
 app.use('/api/cart', cart);
 
 
@@ -28,5 +28,5 @@ app.get('/api/products', (req, res) => {
 //     res.send(req.query);
 // });
 
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listen on port ${port}...`));
