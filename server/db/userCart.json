@@ -6,7 +6,7 @@
             "id_product": 123,
             "product_name": "Ноутбук",
             "price": 45600,
-            "quantity": 27
+            "quantity": 32
         },
         {
             "id_product": 456,
@@ -15,13 +15,13 @@
             "quantity": 12
         },
         {
-            "quantity": 8,
+            "quantity": 12,
             "id_product": 457,
             "product_name": "Gamepad",
             "price": 3000
         },
         {
-            "quantity": 21,
+            "quantity": 33,
             "id_product": 124,
             "product_name": "Keyboard",
             "price": 1600
@@ -49,6 +49,12 @@
             "id_product": 456,
             "product_name": "Мышка",
             "price": 1000
+        },
+        {
+            "quantity": 1,
+            "id_product": 457,
+            "product_name": "Gamepad",
+            "price": 3000
         }
     ]
 }

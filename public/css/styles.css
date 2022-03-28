@@ -1,24 +1,24 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Lato';
-  src: url(../../fonts/googlefonts/lato-bold.woff) format("woff");
-  src: url(../../fonts/googlefonts/lato-bold.woff2) format("woff2");
+  src: url(../fonts/googlefonts/lato-bold.woff) format("woff");
+  src: url(../fonts/googlefonts/lato-bold.woff2) format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url(../../fonts/googlefonts/lato-regular.woff) format("woff");
-  src: url(../../fonts/googlefonts/lato-regular.woff2) format("woff2");
+  src: url(../fonts/googlefonts/lato-regular.woff) format("woff");
+  src: url(../fonts/googlefonts/lato-regular.woff2) format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url(../../fonts/googlefonts/lato-light.woff) format("woff");
-  src: url(../../fonts/googlefonts/lato-light.woff2) format("woff2");
+  src: url(../fonts/googlefonts/lato-light.woff) format("woff");
+  src: url(../fonts/googlefonts/lato-light.woff2) format("woff2");
   font-style: normal;
   font-weight: 300;
 }
@@ -613,6 +613,10 @@ body {
   line-height: 19px;
   color: #f16d7f;
   padding-bottom: 20px;
+}
+
+.product__item-img {
+  min-height: 100px;
 }
 
 .products__button-wrp {
@@ -2080,6 +2084,87 @@ body {
 
 .invisible {
   display: none;
+}
+
+.basket {
+  position: relative;
+  display: inline;
+}
+
+.basket-block {
+  z-index: 2;
+  position: absolute;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  right: 0;
+  top: 130%;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  width: 300px;
+}
+
+.del-btn {
+  margin-top: 5px;
+  background-color: #2f2a2d;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  color: #fafafa;
+  border-radius: 5px;
+  -webkit-transition: all ease-in-out .4s;
+  transition: all ease-in-out .4s;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.product-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-item img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 15px;
+}
+
+.product-single-price {
+  color: #474747;
+  font-size: 0.5em;
+}
+
+.product-price {
+  margin-left: 30px;
+}
+
+.product-desc {
+  max-width: 150px;
+}
+
+.product-quantity {
+  margin-top: 15px;
+  font-size: 0.75em;
+}
+
+.right-block {
+  text-align: right;
 }
 
 @media (max-width: 1599px) {

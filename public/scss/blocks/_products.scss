@@ -53,6 +53,10 @@
   padding-bottom: 20px;
 }
 
+.product__item-img{
+  min-height: 100px;
+}
+
 .products__button-wrp {
   display: flex;
   justify-content: center;
@@ -102,6 +106,7 @@
   position: absolute;
   display: flex;
 }
+
 
 .product__item:hover .overlay {
   background-color: rgba(58, 56, 56, 0.86);

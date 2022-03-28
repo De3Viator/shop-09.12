@@ -14,6 +14,7 @@ Vue.component("products", {
         for (let item of data) {
           this.$data.products.push(item);
           this.$data.filtered.push(item);
+          console.log(item.image)
         }
       })
       .catch((error) => {
@@ -28,21 +29,19 @@ Vue.component("products", {
       );
     },
   },
-  template: `<div class="products">
+  template: `<ul class="products products__list">
                 <product v-for="item of filtered" 
-                :key="item.id_product" 
-                :img="imgProduct"
                 :product="item"
                 @add-product="$parent.$refs.cart.addProduct"></product>
-               </div>`,
+               </ul>`,
 });
 Vue.component("product", {
-  props: ["product", "img"],
+  props: ["product"],
   template: `
         <li class="product__item">
             <img
-            :src="img"
-              alt="features-2"
+            :src="product.image"
+              alt="features"
               class="product__item-img"
             />
             <div class="overlay"></div>
