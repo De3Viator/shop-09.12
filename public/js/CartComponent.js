@@ -39,7 +39,7 @@ Vue.component('cart', {
         },
         remove(item){
             console.log(item)
-            this.$parent.deleteJson(`/api/cart/${item.id_product}`)
+            this.$parent.putJson(`/api/cart/${item.id_product}/clear`,item)
                 .then(data => {
                     if (data.result === 1) {
                         if(item.quantity>1){
