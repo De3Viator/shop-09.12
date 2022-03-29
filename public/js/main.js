@@ -39,7 +39,16 @@ const app = new Vue({
                     this.$refs.error.text = error;
                 })
         },
-
-
+        deleteJson(url) {
+            return fetch(url,{
+                method: 'DELETE',
+                headers: {
+                "Content-Type": "application/json"
+                }
+            }).then(result => result.json())
+            .catch(error => {
+                    this.$refs.error.text = error;
+            })
+        }
     },
 });

@@ -3,7 +3,8 @@ const fs = require('fs');
 
 const actions = {
     add: cart.add,
-    change: cart.change
+    change: cart.change,
+    clear:cart.clear
 };
 //HANDLER отвечает за изменение данных в самом файле
 let handler = (req, res, action, file) => {
@@ -18,9 +19,9 @@ let handler = (req, res, action, file) => {
                 } else {
                     res.send(JSON.stringify({result: 1}))
                 }
-            })
+            });
         }
-    })
+    });
 };
 
 module.exports = handler;
